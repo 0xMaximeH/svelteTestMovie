@@ -1,0 +1,93 @@
+
+
+body {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  width: 100%;
+  border: 40px;
+  justify-content: center;
+  background-color: #FAFAFA; /*var(--background-color);*/
+  
+}
+
+.weekly {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  max-width: 950px;
+  z-index: 1;
+  margin: auto;
+}
+
+.card { 
+  
+  background-size: cover;
+  background-blend-mode: darken;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05),
+              0px 8px 15px rgba(0, 0, 0, 0.1),
+              0 0 0 1px rgba(255, 255, 255, 0.1);
+  padding: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: box-shadow .25s;
+  width: 192px;
+  height: 300px;
+}
+
+h4 {
+  z-index: 0;
+  position: relative;
+  font-family: inherit;
+  font-weight: 600;
+  text-align: center;
+  font-size: 25px;
+}
+
+.allmovies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: baseline;
+  gap: 16px;
+  max-width: 1100px;
+  z-index: 1;
+  padding-left: 35px;
+}
+
+.smallcard { 
+  position: relative;
+  background-size: cover;
+  background-blend-mode: darken;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05), 0px 8px 15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  padding: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: box-shadow .25s;
+  width: 96px;
+  height: 150px;
+}
+
+.smallcard > a {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.day-night {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  opacity: .3;
+}
+
+h2 {
+  color: #3a3a3a;
+  text-align: center;
+  font-family: "Segoe UI";
+  margin: 40px 0 40px;
+}
